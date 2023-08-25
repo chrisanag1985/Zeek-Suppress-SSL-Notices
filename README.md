@@ -12,6 +12,14 @@ When a notice is about to be logged to the `notice.log`, it checks if the domain
 
 With this module, you can also specify what type of Notice you want to mute. Also, you can specify the direction of the connection.
 
+## Installation
+
+Use the zkg package manager
+```
+zkg install suppress-ssl-notices
+```
+
+
 ## Available Types of Notices
 
  `Suppress_SSL_Notices::SELF_SIGNED` = "self signed certificate"
