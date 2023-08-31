@@ -41,7 +41,7 @@ event zeek_init(){
 event Input::end_of_data(name: string, source: string) {
 
         @if (!Cluster::is_enabled() || (Cluster::is_enabled() && Cluster::local_node_type() == Cluster::MANAGER))
-                if ( name == "domains_list )
+                if ( name == "domains_list" )
                 {
                         Reporter::info($msg="New Exclude Domain List Loaded. List Length: "+ cat(|exclude_domains_table|));
                 }
